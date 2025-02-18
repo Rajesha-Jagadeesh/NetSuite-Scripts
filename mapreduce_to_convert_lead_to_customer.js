@@ -9,6 +9,7 @@ The mapreduce script can be sheduled to convert the lead into customer record an
 define(['N/search', 'N/record', 'N/log'], function(search, record, log){
   function handleError(error, stage){
     log.error("ERROR ON STAGE" + stage, JSON.stringify(error));
+    log.debug("YE")
   }
 
   function getInputData (context){
